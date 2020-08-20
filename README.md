@@ -9,7 +9,7 @@
 
 ### Approach:
 - Download sentiment dictionaries **Harvard Psychosociological Dictionary**, Harvard-IV-4 TagNeg (H4N), and  Loughran and McDonald (**L&M**) from here: https://sraf.nd.edu/textual-analysis/resources/#Master%20Dictionary
-- Load **domain specific** word embeddings of interest, e.g. learned from financial 10-K corpus. Words of original dictionary will be represented by these word embeddings
+- Load **domain specific** word embeddings of interest e.g. learned from the financial 10-K corpus. Words of the original dictionary will be represented by these word embeddings
 - Train SVM classifier in a 5-fold cross validation setup:
     - using each trained classifier on the 5th fold to predict 20% of the dictionary
     - using dictionary labels, e.g., H4N Dictionary: negative vs. non-negative;  L&M Dictionary: negative vs. non-negative
@@ -99,4 +99,4 @@ emb_model_fin.most_similar('god', topn=9)
  ('eligibles', 0.39197811484336853),
  ('mandatorily', 0.37775948643684387)]
 ```
-Originally, L&M label the word **rebound** as positive word and the word **God** as common word. Main reason: manual labeling of words error-prone due to **experts’ a priori belief about a word’s meaning**
+Originally, L&M label the word **rebound** as a positive word and the word **God** as a common word. Main reason: manual labeling of words error-prone due to **experts’ a priori belief about a word’s meaning**
