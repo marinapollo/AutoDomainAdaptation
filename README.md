@@ -99,4 +99,4 @@ emb_model_fin.most_similar('god', topn=9)
  ('eligibles', 0.39197811484336853),
  ('mandatorily', 0.37775948643684387)]
 ```
-Originally, L&M label the word **rebound** as positive word and the word **God** as common word. 
+Originally, L&M label the word **rebound** as positive word and the word **God** as common word. Main reason: manual labeling of words error-prone due to **experts’ a priori belief about a word’s meaning**
