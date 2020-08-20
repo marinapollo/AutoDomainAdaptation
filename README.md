@@ -8,9 +8,7 @@
 - Main lesson: **Always label words in context**
 
 ### Approach:
-- Download sentiment dictionaries **Harvard Psychosociological Dictionary**, Harvard-IV-4 TagNeg (H4N), and  Loughran and McDonald (**L&M**) from here:
-
-https://sraf.nd.edu/textual-analysis/resources/#Master%20Dictionary
+- Download sentiment dictionaries **Harvard Psychosociological Dictionary**, Harvard-IV-4 TagNeg (H4N), and  Loughran and McDonald (**L&M**) from here: https://sraf.nd.edu/textual-analysis/resources/#Master%20Dictionary
 - Load **domain specific** word embeddings of interest, e.g. learned from financial 10-K corpus. Words of original dictionary will be represented by these word embeddings
 - Train SVM classifier in a 5-fold cross validation setup:
     - using each trained classifier on the 5th fold to predict 20% of the dictionary
