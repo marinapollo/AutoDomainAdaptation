@@ -1,6 +1,6 @@
 # Automatic Domain Adaptation of Sentiment Dictionary
 
-- How to predict financial outcomes from text?
+- How to predict **financial outcomes** from text?
 - Loughran&McDonald (L&M): Finance dictionary created by **manual inspection of 10,000s of words**
 - We show: **a completely automatic method works better!**
 - Main reason: Manual labeling of words error-prone due to **experts’ a priori belief about a word’s meaning**
@@ -100,3 +100,24 @@ emb_model_fin.most_similar('god', topn=9)
  ('mandatorily', 0.37775948643684387)]
 ```
 Originally, L&M label the word **rebound** as a positive word and the word **God** as a common word. Main reason: manual labeling of words error-prone due to **experts’ a priori belief about a word’s meaning**
+
+## Citation
+
+If you make use of the reclassified dictionaries, please cite the following paper:
+```
+@inproceedings{sedinkina-etal-2019-automatic,
+    title = "Automatic Domain Adaptation Outperforms Manual Domain Adaptation for Predicting Financial Outcomes",
+    author = {Sedinkina, Marina  and
+      Breitkopf, Nikolas  and
+      Sch{\"u}tze, Hinrich},
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P19-1034",
+    doi = "10.18653/v1/P19-1034",
+    pages = "346--359",
+    abstract = "In this paper, we automatically create sentiment dictionaries for predicting financial outcomes. We compare three approaches: (i) manual adaptation of the domain-general dictionary H4N, (ii) automatic adaptation of H4N and (iii) a combination consisting of first manual, then automatic adaptation. In our experiments, we demonstrate that the automatically adapted sentiment dictionary outperforms the previous state of the art in predicting the financial outcomes excess return and volatility. In particular, automatic adaptation performs better than manual adaptation. In our analysis, we find that annotation based on an expert{'}s a priori belief about a word{'}s meaning can be incorrect {--} annotation should be performed based on the word{'}s contexts in the target domain instead.",
+}
+```
